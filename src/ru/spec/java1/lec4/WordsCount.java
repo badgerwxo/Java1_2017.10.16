@@ -6,8 +6,8 @@ import java.util.TreeSet;
 
 public class WordsCount {
 	public static void main(String[] args) {
-		String s1 = "	��� ��� ���  	";
-		String s2 = "	��� ��� ���  drtb ervt	aiuwyet oytwb iu8yt 222 333 4444";
+		String s1 = "	bla bla bla 	";
+		String s2 = "	bla bla bla drtb ervt	aiuwyet oytwb iu8yt 222 333 4444";
 		s1 = s1.trim().replaceAll("\\s+", " ");
 		// first, trim from both sides; second, 1 and more spaces replace with 1 space
 
@@ -26,12 +26,12 @@ public class WordsCount {
 //			System.out.println(word);
 //		}
 		
-		for (String word : set) { // ����� ���������� ��������
+		for (String word : set) { // добавляет уникальные значения
 			System.out.println(word);
 		}
 ///
 		//System.out.println(split.length);
-		System.out.println(set.size());//���������� ���������� ��������
+		System.out.println(set.size());
 	}
 
 	private static String[] addWordsToArray(String s1, ArrayList<String> strings) {
