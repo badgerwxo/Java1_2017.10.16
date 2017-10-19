@@ -6,13 +6,15 @@ public class Base {
 	public Base() {
 		super();
 		System.out.println("Base() name="+name);
+		//override from Ext
 		m();
+		//
 	}
-	//override from Ext
+	
 	void m() {
 		System.out.println("Base.m()");
 	}
-	//
+	
 	static String getName(String name) {
 		System.out.println("getNAme("+name+")");
 		return name;
