@@ -28,7 +28,7 @@ public class EntryPoint {
 			double a2 = (double) a / (double) i;
 			double b2 = (double) b / (double) i;
 			if (a1 == a2 && b1 == b2) {
-				System.out.println("��� �� ����� " + a + " � " + b + "=" + i);
+				System.out.println("НОД чисел " + a + " и" + b + "=" + i);
 				break;
 			} else
 				System.out.print("");
@@ -40,7 +40,7 @@ public class EntryPoint {
 			double a2 = (double) i / (double) a;
 			double b2 = (double) i / (double) b;
 			if (a1 == a2 && b1 == b2) {
-				System.out.println("��� �� ����� " + a + " � " + b + "=" + i);
+				System.out.println("НОК чисел " + a + " и " + b + "=" + i);
 				break;
 			} else
 				System.out.print("");
@@ -55,12 +55,12 @@ public class EntryPoint {
 			}
 		}
 		if (t > 0) {
-			System.out.println("����� " + c + " �� �������� �������");
+			System.out.println("Число " + c + " не является простым");
 		} else if (c == 73) {
-			System.out.println("�� ������ ������� ������, " + c + " - ��� ����� ������ ������� �����");
+			System.out.println("ПО мнению Шелдона Купера, " + c + " - Самое лучшее простое число");
 		} else {
 
-			System.out.println("����� " + c + " �������");
+			System.out.println("Число " + c + " простое");
 		}
 
 		/*

@@ -12,6 +12,7 @@ public class WordsCount {
 		// first, trim from both sides; second, 1 and more spaces replace with 1 space
 
 		ArrayList<String> strings = new ArrayList<>();
+		strings.listIterator().previousIndex();
 		TreeSet<String> set = new TreeSet<>();//класс бинарного дерева
 		
 		
