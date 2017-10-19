@@ -34,7 +34,7 @@ public class WordsCount {
 		System.out.println(set.size());
 	}
 
-	private static String[] addWordsToArray(String s1, ArrayList<String> strings) {
+	private static String[] addWordsToArray(String s1, ArrayList<String> strings) {//метод для добавления слов в список arraylist
 		String[] split = s1.trim().split("\\s+");
 		strings.addAll(Arrays.asList(split));
 		return split;
