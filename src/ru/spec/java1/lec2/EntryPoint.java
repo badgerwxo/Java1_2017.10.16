@@ -6,11 +6,11 @@ import java.lang.Math;
 
 public class EntryPoint {
 
-	public static void main(String[] args) {// любой идентификатор аргумента: args, a, b, etc.
+	public static void main(String[] args) {// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: args, a, b, etc.
 
-		int a = 9;// задать 1 число
-		int b = 12;// задать 2 число
-		int c =37;// задать 3 число для проверки простое/составное
+		int a = 9;// пїЅпїЅпїЅпїЅпїЅпїЅ 1 пїЅпїЅпїЅпїЅпїЅ
+		int b = 12;// пїЅпїЅпїЅпїЅпїЅпїЅ 2 пїЅпїЅпїЅпїЅпїЅ
+		int c =37;// пїЅпїЅпїЅпїЅпїЅпїЅ 3 пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅР±Р»Р°Р±Р»Р°Р±Р»Р°
 
 		int min;
 		int max;
@@ -28,7 +28,7 @@ public class EntryPoint {
 			double a2 = (double) a / (double) i;
 			double b2 = (double) b / (double) i;
 			if (a1 == a2 && b1 == b2) {
-				System.out.println("НОД из чисел " + a + " и " + b + "=" + i);
+				System.out.println("пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ " + a + " пїЅ " + b + "=" + i);
 				break;
 			} else
 				System.out.print("");
@@ -40,7 +40,7 @@ public class EntryPoint {
 			double a2 = (double) i / (double) a;
 			double b2 = (double) i / (double) b;
 			if (a1 == a2 && b1 == b2) {
-				System.out.println("НОК из чисел " + a + " и " + b + "=" + i);
+				System.out.println("пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ " + a + " пїЅ " + b + "=" + i);
 				break;
 			} else
 				System.out.print("");
@@ -55,16 +55,16 @@ public class EntryPoint {
 			}
 		}
 		if (t > 0) {
-			System.out.println("Число " + c + " не является простым");
+			System.out.println("пїЅпїЅпїЅпїЅпїЅ " + c + " пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		} else if (c == 73) {
-			System.out.println("По мнению Шелдона Купера, " + c + " - это самое лучшее простое число");
+			System.out.println("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, " + c + " - пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ");
 		} else {
 
-			System.out.println("Число " + c + " простое");
+			System.out.println("пїЅпїЅпїЅпїЅпїЅ " + c + " пїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		}
 
 		/*
-		 * объявление массива
+		 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		 */
 		// int[] array1 = new int[2];
 		// int[] array2 = new int[] { 1, 2, 3, 4, 5 };
@@ -73,19 +73,19 @@ public class EntryPoint {
 		//
 		// System.out.println(i);
 		// }
-		// for (int i : array2) {// вывод элементов массива
+		// for (int i : array2) {// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		// System.out.println(i);
 		// }
 
 		/*
-		 * операции с большими числами long a=1,b=1,c;
+		 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ long a=1,b=1,c;
 		 * 
 		 * BigInteger i1=new BigInteger("1"); BigInteger i2=new BigInteger("1");
 		 * BigInteger i3;
 		 * 
 		 * 
-		 * for (int i=1;i<=100;i++) { i3=i1.add(i2);//операция сложения больших чисел
-		 * класса BigInteger i1=i2; i2=i3;
+		 * for (int i=1;i<=100;i++) { i3=i1.add(i2);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+		 * пїЅпїЅпїЅпїЅпїЅпїЅ BigInteger i1=i2; i2=i3;
 		 * 
 		 * System.out.println("("+i +")="+i1); }
 		 */
@@ -93,16 +93,16 @@ public class EntryPoint {
 		// System.out.println(Math.pow(2.5, -3.5));
 
 		/*
-		 * операции с датой
+		 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 		 */
 
-		// Date date = new Date(Integer.MAX_VALUE);//Integer.MAX_VALUE - максимальное
-		// значение int
+		// Date date = new Date(Integer.MAX_VALUE);//Integer.MAX_VALUE - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ int
 		// System.out.println(date);
-		// System.out.println(date.getTime());//миллисекунды
+		// System.out.println(date.getTime());//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 		/*
-		 * циклы
+		 * пїЅпїЅпїЅпїЅпїЅ
 		 * 
 		 */
 
@@ -124,22 +124,22 @@ public class EntryPoint {
 		// long millisec=1000*60*60*24*365*3;
 
 		/*
-		 * системы считсления, их вывод, преобразования
+		 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		 * 
 		 */
 		//
 		// System.out.println(10);//10
 		// System.out.println(10*1.0);//10.0
-		// System.out.println(010);//8 - восьмеричная CC
-		// System.out.println(0010);//8 - восьмеричная CC
+		// System.out.println(010);//8 - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ CC
+		// System.out.println(0010);//8 - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ CC
 		// System.out.println(001D);//double 1.0
-		// System.out.println(0b10);//2 - двоичная CC
-		// System.out.println(0x10);//16 -шестнадцатеричная СC
+		// System.out.println(0b10);//2 - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ CC
+		// System.out.println(0x10);//16 -пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅC
 		//
 		// System.out.println(0xDEAD_BEEF);
 		// System.out.println(02e3f);//10 ^2
 		//
-		// long var=5;//приводится к int
+		// long var=5;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ int
 		// var=5_000_000_000L;//long
 		// double d=5;//int
 		//
