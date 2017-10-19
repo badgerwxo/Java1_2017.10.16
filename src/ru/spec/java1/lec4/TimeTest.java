@@ -13,7 +13,7 @@ public class TimeTest {
 
 	}
 
-	private static void test() {
+	public static void test() {
 		long millis = System.currentTimeMillis();
 		long nano = System.nanoTime() / 1_000_000;// время с момента включения компьютера!!!
 		long nano2 = System.nanoTime();
