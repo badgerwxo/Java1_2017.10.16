@@ -28,7 +28,7 @@ public class WordsCount {
 		for (String word : set) { // вывод уникальных значений
 			System.out.println(word);
 		}
-
+///
 		//System.out.println(split.length);
 		System.out.println(set.size());//количество уникальных значений
 	}
