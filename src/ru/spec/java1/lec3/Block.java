@@ -4,22 +4,22 @@ import java.util.Iterator;
 
 public class Block {
 	int i;
-	static int count;//поле, общее для всех объектов
+	static int count;//пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-	public Block() { // конструктор
-		super();// вызов конструктора базового объекта
+	public Block() { // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		super();// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		System.out.println("New block");
 		count++;
 
 	}
 
-	void sayhello() {//нестатический метод
+	void sayhello() {//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 		System.out.println("Hello"+i);
 	}
 	
 	public static void main(String[] args) {
-		// i=5;
-		//sayHello();//н
+		// i=5;//
+		//sayHello();//пїЅ
 		
 		for (int i = 0; i < 10; i++) {
 			//new Block();
