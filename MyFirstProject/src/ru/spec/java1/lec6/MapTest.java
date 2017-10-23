@@ -18,7 +18,7 @@ public class MapTest {// интерфейс, HashMAp его реализует
 		map.put("Hello", "world");
 		map.put("Bye", "123");
 		map.put("hello", "WORLD");
-		System.out.println(map.put("hello", "WORLD!"));// озвращает предудущее значение
+		System.out.println(map.put("hello", "WORLD!"));// озвращает предыдущее значение
 
 		map.put("123", "1");
 		map.put("234", "2");
