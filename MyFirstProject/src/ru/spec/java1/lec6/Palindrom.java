@@ -4,6 +4,9 @@ public class Palindrom {
 
 	public static void main(String[] args) {
 
+		System.out.println(isPalindrom("6556"));
+		
+		
 		for (int i=0;i<100000;i++) {
 			if(isPalindrom(i, 7)&& isPalindrom(i, 17)) {
 				System.out.println("("
