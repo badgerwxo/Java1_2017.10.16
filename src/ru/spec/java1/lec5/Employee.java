@@ -27,6 +27,7 @@ static {
 		this.age = age;
 		this.title = title;
 		MAX=200;
+		
 	}
 
 	public Employee(String name, int age) {
@@ -42,6 +43,7 @@ static {
 		new Employee("Name", 23, "title");
 		Employee employee = new Employee("Name", 23);
 		System.out.println(employee.age);		
+		
 		
 
 	}
