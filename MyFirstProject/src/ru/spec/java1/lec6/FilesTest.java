@@ -4,25 +4,30 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 
 public class FilesTest {
 
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) throws FileNotFoundException   {
 		System.out.println("Enter any string");
 		InputStream in = 		System.in;
 		
 		File file = new File("C:/java/test.txt");
 		in = new FileInputStream(file);
-		
+		//in  = new URL("http://specialist.ru").openStream();
 		
 		Scanner scanner = new Scanner(in);
 		
-		for (;scanner.hasNextLine();) {
-		String nextLine = scanner.nextLine();
+		Map<String,Integer> stat = new HashMap<>();
 		
-		System.out.println("Your string is " + nextLine);
+		for (;scanner.hasNextLine();) {
+		//String nextLine = scanner.nextLine();
+			String [] nextLine = scanner.nextLine().toLowerCase().split("[^а-яёъ");
+		//System.out.println("Your string is " + nextLine);
 		}// TODO Auto-generated method stub
 
 	}
