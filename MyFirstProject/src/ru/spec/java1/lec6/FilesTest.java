@@ -16,17 +16,17 @@ public class FilesTest {
 		System.out.println("Enter any string");
 		InputStream in = 		System.in;
 		
-		File file = new File("C:/java/test.txt");
+		File file = new File("C:/java/test2.txt");
 		in = new FileInputStream(file);
 		//in  = new URL("http://specialist.ru").openStream();
 		
 		Scanner scanner = new Scanner(in);
 		
-		Map<String,Integer> stat = new HashMap<>();
+		//Map<String,Integer> stat = new HashMap<>();
 		
 		for (;scanner.hasNextLine();) {
 		//String nextLine = scanner.nextLine();
-			String [] nextLine = scanner.nextLine().toLowerCase().split("[^а-яёъ");
+			String [] nextLine = scanner.nextLine().toLowerCase().split("[^а-яё]+");
 		//System.out.println("Your string is " + nextLine);
 		}// TODO Auto-generated method stub
 
