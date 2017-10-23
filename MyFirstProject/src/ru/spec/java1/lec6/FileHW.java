@@ -72,10 +72,10 @@ public class FileHW {
 	            }
 	            map.put(count, word);
 	            //System.out.println(word + " - "+count);
-	            map.forEach((val,key)-> System.out.println(val+" слов " +key));
+	            //map.forEach((val,key)-> System.out.println(val+" слов " +key));
 	        }
 	
-			
+			map.forEach((val,key)-> System.out.println(val+" слов " +key));
 			
 		
 ///
