@@ -44,7 +44,13 @@ public class FileHW {
 		}
 //		System.out.println(strings.size());
 //		for (int i=0;i<=strings.size();i++) {
+		
+		
+		
 			set.addAll(strings);
+			
+			
+			
 //			int wordsCount=1;
 //			for (String word:set) {
 //				if (strings.equals(word)){
