@@ -11,7 +11,10 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
 import java.util.TreeSet;
+
+import ru.spec.java1.lec4.WordsCount;
 
 
 public class FileHW {
@@ -31,8 +34,8 @@ public class FileHW {
 		
 		ArrayList<String> strings = new ArrayList<>();
 		strings.listIterator().previousIndex();
-		//TreeSet<String> set = new TreeSet<>();
-		HashSet<String> set = new HashSet<>();
+		TreeSet<String> set = new TreeSet<>();
+		//HashSet<String> set = new HashSet<>();
 		
 		
 		for (;scanner.hasNextLine();) {
@@ -60,14 +63,21 @@ public class FileHW {
 //			}
 //		}
 		
-		
-		for (String word : set) { // добавляет уникальные значения
+			for (String word : set){
+	            int count = 0;
+	            for (String w : strings){
+	                if (word.equals(w)) count++;
+	            }
+	            System.out.println(word + " - "+count);
+	        }
+	
 			
-			System.out.println (word + "(" +word.length()+ ")");
-		}
+			
+		
 ///
 		//System.out.println(split.length);
-		System.out.println(set.size()+ "ээ");
+		System.out.println("Уникальных слов: "+set.size());
 	}
+
 
 }
