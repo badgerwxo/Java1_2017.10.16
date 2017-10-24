@@ -17,7 +17,8 @@ public class ObjectToFile implements Serializable {
 	 */
 	private static final long serialVersionUID = 6439967352727685215L;
 	int i=15;
-	String name;
+	transient String name;
+	
 
 	public static void main(String[] args) throws Exception {
 		File f=new File("c:/java/obj.bin");
