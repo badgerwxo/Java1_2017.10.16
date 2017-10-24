@@ -10,10 +10,13 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
+
+import com.sun.corba.se.impl.encoding.OSFCodeSetRegistry.Entry;
 
 import ru.spec.java1.lec4.WordsCount;
 
@@ -32,11 +35,47 @@ public class FileHW {
 		Scanner scanner = new Scanner(in);
 		
 		ArrayList<String> strings = new ArrayList<>();
-		
-		//strings.listIterator().previousIndex();
 		TreeSet<String> set = new TreeSet<>();
-		
 		Map<Long, String> map = new TreeMap<>();
+		
+		
+		
+		
+//		Map<String,Integer> stat = new HashMap<>();
+		//strings.listIterator().previousIndex();
+//		Set<Entry<String, Integer>> entrySet = stat.entrySet();
+//		TreeSet<Entry<String, Integer>> sorted 
+//		= new TreeSet<>((e1,e2)->{int cmp = e1.getValue().compareTo(e2.getValue());
+//		return -1* (cmp==0?e1.getKey().compareTo(e2.getKey()):cmp);
+//		});
+//		sorted.addAll(entrySet);
+//		sorted.forEach(e->System.out.println(e.getValue()+"\t"+e.getKey()));
+		//TreeSet<Entry<St
+		
+//		static HashMap<String,Integer> bigrams=new HashMap<>();
+//		
+//		static void addStringToStat (String src, int gram){ 		{
+//			src=src.toLowerCase().replaceAll("[^а-яё]+", " ").trim();
+//			String[] words=src.split(" ");
+//
+//		}
+//		
+//		
+//		static void addWordsToStat (String word, int gram) {
+//			
+//			int len=word.length();
+//			
+//			if (maxlen<=word.length()-gram) {
+//				bigrams.put(word, 1+Optional.ofNullable(bigrams.get(word)).orElse(0));
+//			//	bigrams.get(word);
+//			}else {
+//				for(int i=0;i<maxlen;i++) {
+//					String 
+//				}
+//			}
+//			
+//			
+//		}
 		
 		
 		for (;scanner.hasNextLine();) {
@@ -46,7 +85,12 @@ public class FileHW {
 			strings.addAll(Arrays.asList(nextLine));
 			
 		//System.out.println(nextLine);
+			
+			
 		}
+		
+		
+		
 //		System.out.println(strings.size());
 //		for (int i=0;i<=strings.size();i++) {
 		

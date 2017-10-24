@@ -16,20 +16,29 @@ public class FilesTest {
 		System.out.println("Enter any string");
 		InputStream in = 		System.in;
 		
-		File file = new File("C:/java/test2.txt");
+		File file = new File("C:/java/java1.txt");
 		in = new FileInputStream(file);
 		//in  = new URL("http://specialist.ru").openStream();
 		
 		Scanner scanner = new Scanner(in);
 		
-		//Map<String,Integer> stat = new HashMap<>();
+		
+		Map<String,Integer> stat = new HashMap<>();
 		
 		for (;scanner.hasNextLine();) {
 		//String nextLine = scanner.nextLine();
 			String [] nextLine = scanner.nextLine().toLowerCase().split("[^а-яё]+");
+			for (String word:nextLine) {
+				if(!word.isEmpty()) {
+				Integer count = stat.get(word);
+				count=count==null?1:count+1;
+				stat.put(word,count);
+				}
+			}
+			
 		//System.out.println("Your string is " + nextLine);
 		}// TODO Auto-generated method stub
-
+		stat.forEach((key,val)-> System.out.println(key+" = " +val));
 	}
 
 }
