@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+<<<<<<< HEAD
 import java.util.Optional;
 import java.util.Scanner;
 import java.util.Set;
@@ -91,6 +92,45 @@ public class FileHW {
 		
 		
 		
+=======
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
+import ru.spec.java1.lec4.WordsCount;
+
+
+public class FileHW {
+
+	public static void main(String[] args) throws FileNotFoundException   {
+		//System.out.println("Enter any string");
+		InputStream in = 		System.in;
+		
+		File file = new File("C:/java/java1.txt");
+		in = new FileInputStream(file);
+		//in  = new URL("http://specialist.ru").openStream();
+		
+		
+		Scanner scanner = new Scanner(in);
+		
+		ArrayList<String> strings = new ArrayList<>();
+		
+		//strings.listIterator().previousIndex();
+		TreeSet<String> set = new TreeSet<>();
+		
+		Map<Long, String> map = new TreeMap<>();
+		
+		
+		for (;scanner.hasNextLine();) {
+		//String nextLine = scanner.nextLine();
+		String [] nextLine = scanner.nextLine().toLowerCase().split("[^а-яё]+");
+			//strings.addAll(Arrays.asList(nextLine));
+			strings.addAll(Arrays.asList(nextLine));
+			
+		//System.out.println(nextLine);
+		}
+>>>>>>> branch 'master' of https://github.com/badgerwxo/Java1_2017.10.16
 //		System.out.println(strings.size());
 //		for (int i=0;i<=strings.size();i++) {
 		

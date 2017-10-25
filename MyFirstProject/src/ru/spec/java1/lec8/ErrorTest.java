@@ -19,15 +19,28 @@ public class ErrorTest {
 		
 		//блок2
 		System.err.println("Start");
-
+//
+//		try {
+//			int i=5/0;
+//			System.out.println("---");
+//			
+//		}catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//		System.out.println("end");
+		
 		try {
-			int i=5/0;
-			System.out.println("---");
+			throw new RuntimeException("My exception");
+			//System.out.println("---");
 			
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
 		System.out.println("end");
+		
+		
+		
+		
 	}
 
 }
