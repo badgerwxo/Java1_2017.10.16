@@ -36,7 +36,7 @@ public class FilesTest {
 		
 		for (;scanner.hasNextLine();) {
 		//String nextLine = scanner.nextLine();
-<<<<<<< HEAD
+
 			String [] nextLine = scanner.nextLine().toLowerCase().split("[^а-яё]+");
 			for (String word:nextLine) {
 				if(!word.isEmpty()) {
@@ -49,7 +49,7 @@ public class FilesTest {
 		//System.out.println("Your string is " + nextLine);
 		}// TODO Auto-generated method stub
 		stat.forEach((key,val)-> System.out.println(key+" = " +val));
-=======
+
 		String [] nextLine = scanner.nextLine().toLowerCase().split("[^а-яё]+");
 			strings.addAll(Arrays.asList(nextLine));
 			
@@ -65,8 +65,7 @@ public class FilesTest {
 		}
 ///
 		//System.out.println(split.length);
-		System.out.println(set.size());
->>>>>>> branch 'master' of https://github.com/badgerwxo/Java1_2017.10.16
-	}
+		System.out.println(set.size()));
+	
 
 }
