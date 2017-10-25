@@ -28,7 +28,7 @@ static final String type = "asd";
 				System.out.println("def");
 				break;
 		}
-		
+		//
 		switch (new SwitchTest().getClass().getName()) {
 		default: 
 			System.out.println("def");
