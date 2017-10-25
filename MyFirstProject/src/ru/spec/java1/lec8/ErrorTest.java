@@ -35,6 +35,8 @@ public class ErrorTest {
 			
 		}catch (Exception e) {
 			e.printStackTrace();
+		}finally {//гарантированное выполнение
+			
 		}
 		System.out.println("end");
 		
