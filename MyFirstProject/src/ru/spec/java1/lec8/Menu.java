@@ -4,6 +4,7 @@ public enum Menu implements Runnable{
 	MAIN ("Главная"),
 	PROJECTS ("Проекты"){
 	@Override//переопределение метода
+	
 	public void run() {
 		System.out.println("Hello World!");
 }
@@ -12,7 +13,7 @@ public enum Menu implements Runnable{
 	PROJECTS_1_1 ("Проект_1_1", PROJECTS_1),//создание подменю после основного меню
 	PROJECTS_2 ("Проект_2", PROJECTS),//создание подменю после основного меню
 	PROJECTS_3 ("Проект_3", PROJECTS),//создание подменю после основного меню
-	
+	//
 	ABOUT ("О нас"),
 	CONTACTS ("Контакты");
 	
