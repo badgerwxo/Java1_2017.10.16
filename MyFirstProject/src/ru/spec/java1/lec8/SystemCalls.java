@@ -35,7 +35,7 @@ public class SystemCalls {
 		Scanner scanner = new Scanner(is,"cp866");
 		for (;scanner.hasNextLine();) {
 			
-		System.out.println(scanner.nextLine());
+		System.out.println(scanner.nextLine());//
 	}
 	}
 
