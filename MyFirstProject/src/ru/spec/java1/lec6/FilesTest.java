@@ -58,14 +58,14 @@ public class FilesTest {
 			
 		//System.out.println(nextLine);
 		}
-		set.addAll(strings);
-		for (String word : set) { // добавляет уникальные значения
-			
-			System.out.print (word + "(" +" "+ ")");
-		}
-///
-		//System.out.println(split.length);
-		System.out.println(set.size()));
+//		set.addAll(strings);
+//		for (String word : set) { // добавляет уникальные значения
+//			
+//			System.out.print (word + "(" +" "+ ")");
+//		}
+/////
+//		//System.out.println(split.length);
+//		System.out.println(set.size()));
 	
 
 }
