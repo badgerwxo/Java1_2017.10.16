@@ -26,7 +26,6 @@ public class Server {
 		
 		for (;;) {
 
-			
 
 			Socket socket = ss.accept();// блокирующий метод, сокет - пара открытых портов на 2 адресах: удалённый и
 			// локальный
@@ -36,6 +35,10 @@ public class Server {
 				log.throwing("Server", "Main", e);
 				log.info(e.getMessage());
 				System.out.println("");
+				
+				
+				
+				
 			}
 		
 			
